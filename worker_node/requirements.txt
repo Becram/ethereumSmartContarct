@@ -1,0 +1,6 @@
+Flask==1.0.2
+requests==2.21.0
+pycrypto
+web3
+flask-restful
+flask-marshmallow
