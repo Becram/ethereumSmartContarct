@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "#{MASTERIP}" 
   config.vm.network "forwarded_port", guest: 8080, host: 19090
   config.vm.network "forwarded_port", guest: 5601, host: 15601
-  config.vm.synced_folder "/library", "/library"
+  config.vm.synced_folder "/data/vagrant_data", "/data"
   ####### Install Puppet Agent #######
   config.vm.provision "shell", path: "bootstrap.sh"
 #  config.vm.provision "shell", path: "copy_config.sh"

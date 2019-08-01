@@ -1,4 +1,4 @@
-class pustakalaya::installdocker{
+class provision_docker::installdocker{
 
        exec {'install docker': 
                command => '/usr/bin/curl -fsSL https://get.docker.com/ | sh'
